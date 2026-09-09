@@ -22,13 +22,13 @@ for x in d.keys():
 print()        #1 2 3
 for x in d:
     print(d[x], end=' ') 
-print()       #'a' 'b' 'c'
+print()       #'a b c
 for x in d.values():   
     print(x, end=' ')
 print()       #a b c
 for x in d.items():     
     print(x, end=' ')
-print()       #([1:'a',2:'b',3:'c'])
+print()       #(1:'a') (2:'b') (3:'c')
 #index based for loop. 
 l = [5,4,3,2,1]
 #iterate from left to right 
@@ -56,10 +56,40 @@ for x in l:
 
 #Homework
 t = (5,4,3,2,1)  
+for i in range(len(t)):
+    print(t[i], end=' ')
+print()
+for i in range(len(t)-1, -1, -1):
+    print(t[i], end=' ')
+print()  
 s = {5,4,3,2,1}
+for i in range(len(s)):
+    print(s[i], end=' ')
+print()
+for i in range(len(s)-1, -1, -1):
+    print(s[i], end=' ')
+print()
 d = {5:'e', 4:'d', 3:'c', 2:'b', 1:'a'}
+for i in range(len(d)):
+    print(d[i], end=' ')
+print()
+for i in range(len(d)-1, -1, -1):
+    print(d[i], end=' ')
+print()
 w = 'rakesh' 
+for i in range(len(w)):
+    print(w[i], end=' ')
+print()
+for i in range(len(w)-1, -1, -1):
+    print(w[i], end=' ')
+print()
 r = range(5,0,-1)
+for i in range(len(r)):
+    print(r[i], end=' ')
+print()
+for i in range(len(r)-1, -1, -1):
+    print(r[i], end=' ')
+print()
 print()     #
 
 #continue 
@@ -77,7 +107,7 @@ print()   # 1 2
 #pass 
 for x in range(1,11):
     pass
-a = 21      #21
+a = 21      
 #else 
 for x in range(1,11):
     if x % 3 == 0:
@@ -92,7 +122,7 @@ for x in range(1, 11):
     print(x, end=' ')
 else:
     print('Loop completed successfully') 
-print('\n')
+print('\n')                          #1 2
 #assert
 n = 10 
 assert n > 5, 'N is not greater than 5' #A
