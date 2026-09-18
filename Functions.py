@@ -1,22 +1,22 @@
-# def add(a, b):
-#     print('add function')
-#     c = a + b 
-#     return c       #add function
-#     print('HI')    
-# def sub(a, b):
-#     print('sub function')
-#     c = a - b
-#     return      #sub function
-# def div(a, b):
-#     print('div function')
-#     c = a / b         #div function
-# x = add(10, 15)   
-# y = sub(20, 10)   
-# z = div(25, 10)   
-# print(x)      #25
-# print(y)      #None
-# print(z)      #None
-# print()
+def add(a, b):
+    print('add function')
+    c = a + b 
+    return c       #add function
+    print('HI')    
+def sub(a, b):
+    print('sub function')
+    c = a - b
+    return      #sub function
+def div(a, b):
+    print('div function')
+    c = a / b         #div function
+x = add(10, 15)   
+y = sub(20, 10)   
+z = div(25, 10)   
+print(x)      #25
+print(y)      #None
+print(z)      #None
+print()
 
 #Type of arguments
 def detail(name, age, rollno):
