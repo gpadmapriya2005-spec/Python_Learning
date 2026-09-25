@@ -1,0 +1,58 @@
+# import random
+# string='adbnhejiuyuiopyhjklrprakijcd!@#$%&*'
+# n=int(input('Enter the length of the password:'))
+# password=''
+# for i in range(n):
+#     password+=random.choice(string)
+# print(f'Your password of length n is:{password}')
+#ATM
+balance=0
+p1=int(input('Set Pin:'))
+if len(str(p1)) !=4:
+    print("Pin should be max 4 digits")
+    exit()
+p2=int(input("Reenter the pin:"))
+if p1!= p2:
+    print("Pin is not matching")
+    exit()
+pin=p2
+while True:
+    print()
+    print('1.Balance enquiry')
+    print('2.Deposit amount')
+    print('3.Withdraw amount')
+    print('4.exit')
+    n=int(input('Enter the option: '))
+    match n:
+        case 1:
+             p=int(input('Enter pin:'))
+             if p1!=pin:
+                 print("Pin is incorrect")
+                 continue
+             print(f'Balance is {balance}')
+        case 2:
+             p=int(input('Enter pin:'))
+             if p1!=pin:
+                print("Pin is incorrect")
+                continue
+             amount=int(input('Enter the deposit amount:'))
+             amount+=balance
+             print(f'Amount deposited successfully.Balance is {balance}')
+        case 3:
+             p=int(input('Enter pin:'))
+             if p1!=pin:
+                print("Pin is incorrect")
+                continue
+             amount=int(input('Enter the withdraw amount:'))
+             if amount>balance:
+                 print('Insufficient balance')
+                 balance-=amount
+                 print(f'Amount withdrawn successfully. Balance is {balance}')
+        case 4:
+            break
+
+
+
+
+
+
